@@ -20,12 +20,10 @@ cue2.Volume = 3
 cue2.PlaybackSpeed = 1
 cue2.Looped = true
 cue2:Play()
-    
-end)
 
 local entityList = {
-    {url = "https://raw.githubusercontent.com/SessonKcuwu/Sesson-Kc/refs/heads/main/Ruinor", delay = 140},
-    {url = "https://raw.githubusercontent.com/SessonKcuwu/Sesson-Kc/refs/heads/main/Shatter", delay = 26},
+    {url = "https://raw.githubusercontent.com/SessonKcuwu/Sesson-Kc/refs/heads/main/Ruinor", delay = 340},
+    {url = "https://raw.githubusercontent.com/SessonKcuwu/Sesson-Kc/refs/heads/main/Shatter", delay = 556},
     {url = "https://raw.githubusercontent.com/SessonKcuwu/Sesson-Kc/refs/heads/main/Vortex", delay = 420},
 }
 for _, entity in ipairs(entityList) do
