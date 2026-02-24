@@ -21,10 +21,15 @@ cue2.PlaybackSpeed = 1
 cue2.Looped = true
 cue2:Play()
 
+pcall(function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SessonKcuwu/Sesson-Kc/refs/heads/main/J"((()
+
+end)
 local entityList = {
-    {url = "https://raw.githubusercontent.com/SessonKcuwu/Sesson-Kc/refs/heads/main/Ruinor", delay = 340},
-    {url = "https://raw.githubusercontent.com/SessonKcuwu/Sesson-Kc/refs/heads/main/Shatter", delay = 556},
-    {url = "https://raw.githubusercontent.com/SessonKcuwu/Sesson-Kc/refs/heads/main/Vortex", delay = 420},
+    {url = "https://raw.githubusercontent.com/SessonKcuwu/Sesson-Kc/refs/heads/main/Ruinor", delay = 240},
+    {url = "https://raw.githubusercontent.com/SessonKcuwu/Sesson-Kc/refs/heads/main/Shatter", delay = 456},
+    {url = "https://raw.githubusercontent.com/SessonKcuwu/Sesson-Kc/refs/heads/main/Vortex", delay = 350},
 }
 for _, entity in ipairs(entityList) do
     coroutine.wrap(function()
