@@ -24,9 +24,9 @@ cue2:Play()
 end)
 
 local entityList = {
-    {url = "https://raw.githubusercontent.com/talales/Nhankg.-/refs/heads/main/intro%20fragmented", delay = 140},
-    {url = "https://raw.githubusercontent.com/talales/Nhankg_/refs/heads/main/intro%20fragmented", delay = 26},
-    {url = "https://raw.githubusercontent.com/eoyoustme/back/refs/heads/main/Hunger1", delay = 420},
+    {url = "https://raw.githubusercontent.com/SessonKcuwu/Sesson-Kc/refs/heads/main/Ruinor", delay = 140},
+    {url = "https://raw.githubusercontent.com/SessonKcuwu/Sesson-Kc/refs/heads/main/Shatter", delay = 26},
+    {url = "https://raw.githubusercontent.com/SessonKcuwu/Sesson-Kc/refs/heads/main/Vortex", delay = 420},
 }
 for _, entity in ipairs(entityList) do
     coroutine.wrap(function()
