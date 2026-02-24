@@ -1,0 +1,40 @@
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Annihilation Mode Made By Sesson Kc", true)
+
+-- goofy screech
+game.ReplicatedStorage.Entities.Screech.Top.Eyes.Color = Color3.fromRGB(255, 255, 0)
+game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.RemoteListener.Modules.Screech.Caught.SoundId = "rbxassetid://6600188325"
+game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.RemoteListener.Modules.Screech.Caught.PlaybackSpeed = 1.6
+game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.RemoteListener.Modules.Screech.Attack.SoundId = "rbxassetid://7236490488"
+
+game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Annihilation Now Is Active", true)
+wait(2)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Have fun playing!", true)
+
+local cue2 = Instance.new("Sound")
+cue2.Parent = game.Workspace
+cue2.Name = "Spawn"
+cue2.SoundId = "rbxassetid://9113731836"
+cue2.Volume = 3
+cue2.PlaybackSpeed = 1
+cue2.Looped = true
+cue2:Play()
+    
+end)
+
+local entityList = {
+    {url = "https://raw.githubusercontent.com/talales/Nhankg.-/refs/heads/main/intro%20fragmented", delay = 140},
+    {url = "https://raw.githubusercontent.com/talales/Nhankg_/refs/heads/main/intro%20fragmented", delay = 26},
+    {url = "https://raw.githubusercontent.com/eoyoustme/back/refs/heads/main/Hunger1", delay = 420},
+}
+for _, entity in ipairs(entityList) do
+    coroutine.wrap(function()
+        while true do
+            wait(entity.delay)
+            pcall(function()
+                loadstring(game:HttpGet(entity.url))()
+            end)
+        end
+    end)()
+end
